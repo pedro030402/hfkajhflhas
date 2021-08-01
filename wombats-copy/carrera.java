@@ -26,7 +26,7 @@ public class carrera extends World
         createSuelo7();
         createSuelo8();
         createObstaculo();
-        createObstaculo2();
+        //createObstaculo2();
         //createObstaculo3();
         createCorredor();
         createBanan();

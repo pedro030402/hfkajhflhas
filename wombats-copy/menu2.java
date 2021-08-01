@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class menu2 extends World
 {
     punto punto= new punto();
-    private int opcion=0;
+    private int opcion2=0;
 
     /**
      * Constructor for objects of class menu.
@@ -29,19 +29,19 @@ public class menu2 extends World
         
     }
     public void act(){ 
-        if (Greenfoot. isKeyDown("UP")&& opcion!=0) {opcion--;}
-        if (Greenfoot. isKeyDown("UP")&& opcion!=1) {opcion--;}
-        if (Greenfoot. isKeyDown("DOWN")&& opcion!=1) {opcion++;}
-        if (Greenfoot. isKeyDown("DOWN")&& opcion!=2) {opcion++;}
+        if (Greenfoot. isKeyDown("UP")&& opcion2!=0) {opcion2--;}
+        if (Greenfoot. isKeyDown("UP")&& opcion2!=1) {opcion2--;}
+        if (Greenfoot. isKeyDown("DOWN")&& opcion2!=1) {opcion2++;}
+        if (Greenfoot. isKeyDown("DOWN")&& opcion2!=2) {opcion2++;}
         
-        if (opcion>=3) opcion=1;
-        if (opcion<0)opcion=0;
+        if (opcion2>=3) opcion2=1;
+        if (opcion2<0)opcion2=0;
         
         
-        punto.setLocation(275,50 +(opcion*100));
+        punto.setLocation(275,50 +(opcion2*100));
         
-        if (Greenfoot.isKeyDown("SPACE")){ 
-            switch(opcion){ 
+        if (Greenfoot.isKeyDown("enter")){ 
+            switch(opcion2){ 
                 case 0:
                     Greenfoot.setWorld(new carrera());
                     break;

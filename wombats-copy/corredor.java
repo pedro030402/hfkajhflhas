@@ -38,15 +38,15 @@ public class corredor extends Actor
         }
         if( isTouching(obstaculo.class))
         {
-         Greenfoot.stop();
+         Greenfoot.setWorld(new menu3());
         }
         if( isTouching(obstaculo2.class))
         {
-         Greenfoot.stop();
+         Greenfoot.setWorld(new menu3());
         }
         if( isTouching(obstaculo3.class))
         {
-         Greenfoot.stop();
+         Greenfoot.setWorld(new menu3());
         }
         if( isTouching(banana.class))
         {
@@ -55,7 +55,7 @@ public class corredor extends Actor
         }
         if( isTouching(lava.class))
         {
-         Greenfoot.stop();
+         Greenfoot.setWorld(new menu3());
         }
     }
     

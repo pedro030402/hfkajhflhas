@@ -1,29 +1,26 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class menu here.
+ * Write a description of class menu3 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class menu extends World
+public class menu3 extends World
 {
-    punto punto= new punto();
+    
+ punto punto= new punto();
     private int opcion=0;
-
-    /**
-     * Constructor for objects of class menu.
-     * 
-     */
-    public menu()
+public menu3()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
-        hacerMenu();
+        hacerMenu3();
     }
-    private void hacerMenu(){
-        addObject(new inicio(),400,250);
-        addObject(new cancelar(),400,350);
+    private void hacerMenu3(){
+        addObject(new gameover(),300,30);
+        addObject(new volverj(),400,250);
+        addObject(new salir(),400,350);
         addObject(punto,275,250);
         
     }
