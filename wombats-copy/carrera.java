@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class carrera extends World
 {
+    contador cont= new contador();
    
     /**
      * Constructor for objects of class carrera.
@@ -16,7 +17,8 @@ public class carrera extends World
     public carrera()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1);
+        
         createSuelo();
         createSuelo2();
         createSuelo3();
@@ -34,8 +36,18 @@ public class carrera extends World
         createLava2();
         createLava3();
         createLava4();
+        prepare();
 
     }
+    public contador getcontador()
+    {
+        return cont;
+    }
+    public void prepare()
+    {
+        addObject( cont,200,30);
+    }
+    
     private void createSuelo() 
     {
         

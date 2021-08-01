@@ -18,13 +18,22 @@ public class obstaculo extends corredor
         setLocation(getX()+2,getY());
         if (Limite())
             setLocation(0,Greenfoot.getRandomNumber(600));
+            agregar();
             
             
+    }
+    public void agregar()
+    {
+        carrera mundo= (carrera)getWorld();
+        contador cont=mundo.getcontador();
+        cont.addcontar2();
     }
     public Boolean Limite()
     {
         if (getX()>getWorld().getWidth()-10)
+            
             return true;
+
         else
             return false;
     }

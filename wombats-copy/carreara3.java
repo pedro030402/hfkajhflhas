@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class carreara3 extends World
 {
+    contador cont= new contador();
    
     /**
      * Constructor for objects of class carreara3.
@@ -34,7 +35,16 @@ public class carreara3 extends World
         createLava2();
         createLava3();
         createLava4();
+        prepare();
 
+    }
+    public contador getcontador()
+    {
+        return cont;
+    }
+    public void prepare()
+    {
+        addObject( cont,300,30);
     }
     private void createSuelo() 
     {
@@ -74,13 +84,13 @@ public class carreara3 extends World
     {
         
     
-        addObject( new obstaculo(),0,400);
+        addObject( new obstaculo3(),0,400);
     }
     private void createObstaculo2() 
     {
         
     
-        addObject( new obstaculo2(),0,283);
+        addObject( new obstaculo3(),0,283);
     }
     private void createObstaculo3() 
     {
@@ -92,7 +102,7 @@ public class carreara3 extends World
     {
         
     
-        addObject( new corredor(),260,260);
+        addObject( new corredor3(),260,260);
     }
     private void createBanan() 
     {

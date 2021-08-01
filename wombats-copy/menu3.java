@@ -24,6 +24,7 @@ public menu3()
         addObject(punto,275,250);
         
     }
+    
     public void act(){ 
         if (Greenfoot. isKeyDown("UP")&& opcion!=0) {opcion++;}
         if (Greenfoot. isKeyDown("DOWN")&& opcion!=1) {opcion--;}
