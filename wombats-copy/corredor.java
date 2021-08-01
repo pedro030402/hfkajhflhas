@@ -58,6 +58,7 @@ public class corredor extends Actor
             contador cont=mundo.getcontador();
             cont.addcontar();
             
+            
         }
         if( isTouching(lava.class))
         {
